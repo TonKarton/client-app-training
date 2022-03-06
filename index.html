@@ -2,11 +2,31 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
-    
+    <div class="form">
+        <h1>Введите данные</h1>
+        <input type="text" id="name" placeholder="Имя">
+        <input type="text" id="lastname" placeholder="Фамилия">
+        <input type="text" id="login" placeholder="Логин">
+        <input type="text" id="password" placeholder="Пароль">
+        <label>Укажите дату рождения: <input type="date" id="age"></label>
+        <label>Укажите свой город: <select id="cities">
+        <option value="Moscow">Москва</option>
+        <option value="Sochi" selected>Сочи</option>
+        <option value="Krasnoyarsk">Красноярск</option>
+            </select></label>
+        <label>Укажите свой гендер: <select id="gender">
+            <option value="male" selected>Мужской</option>
+            <option value="female">Женский</option>
+                </select></label>
+        <button onclick="createUser()" class="button">Отправить</button>
+    </div>
+    <div class="background">^</div>
+    <script src="main.js"></script>
 </body>
 </html>
